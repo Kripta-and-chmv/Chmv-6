@@ -64,16 +64,13 @@ namespace chmv4
             string name = string.Empty;
             cmd.CommandText = "update Users set Rights='" + DropDownList1.Text + "' where Username=@Name";
             cmd.Parameters.AddWithValue("@Name", ListBox1.SelectedItem.ToString());
-            cmd.ExecuteNonQuery();
-
-            
-           
             Label2.Text = "Права пользователя '" + ListBox1.SelectedItem.ToString() + "' изменены на '" + DropDownList1.Text + "'";
-            // Server.Transfer("PersonalManagement.aspx", true);
-            //Server.Transfer("PersonalManagement.aspx", false);
-             cn.Close();
+
+            cmd.ExecuteNonQuery();
+            cmd.Clone();
+            cn.Close();
             cmd.Parameters.Clear();
-            //GridView1.UpdateRow(1, true);
+            GridView1.DataBind();
         }
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
