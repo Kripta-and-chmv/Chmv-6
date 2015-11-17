@@ -11,7 +11,7 @@ namespace chmv4
 {
     public partial class PersonalMenegment : System.Web.UI.Page
     {
-        SqlConnection cn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\2Dent_000\Documents\GitHub\Chmv_4\test\chmv4\chmv4\App_Data\forexample.mdf;Integrated Security=True");
+        SqlConnection cn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\2Dent_000\Documents\GitHub\Chmv-6\chmv4\chmv4\App_Data\forexample.mdf;Integrated Security=True");
         SqlCommand cmd = new SqlCommand();
         SqlDataReader dr;
 
@@ -67,11 +67,13 @@ namespace chmv4
             cmd.ExecuteNonQuery();
 
             
-            cn.Close();
-            cmd.Parameters.Clear();
+           
             Label2.Text = "Права пользователя '" + ListBox1.SelectedItem.ToString() + "' изменены на '" + DropDownList1.Text + "'";
             // Server.Transfer("PersonalManagement.aspx", true);
-            Server.Transfer("PersonalManagement.aspx", false);
+            //Server.Transfer("PersonalManagement.aspx", false);
+             cn.Close();
+            cmd.Parameters.Clear();
+            //GridView1.UpdateRow(1, true);
         }
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)

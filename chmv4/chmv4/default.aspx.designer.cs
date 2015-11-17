@@ -49,6 +49,33 @@ namespace chmv4 {
         protected global::System.Web.UI.WebControls.Button btnEnterance;
         
         /// <summary>
+        /// ScriptManager1 элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
+        
+        /// <summary>
+        /// ValidationSummary1 элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
+        
+        /// <summary>
+        /// UpdatePanel1 элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
+        
+        /// <summary>
         /// MultiView1 элемент управления.
         /// </summary>
         /// <remarks>
@@ -256,15 +283,6 @@ namespace chmv4 {
         protected global::System.Web.UI.WebControls.RangeValidator RangeValidator3;
         
         /// <summary>
-        /// ValidationSummary1 элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически создаваемое поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
-        
-        /// <summary>
         /// CheckBox1 элемент управления.
         /// </summary>
         /// <remarks>
@@ -290,6 +308,15 @@ namespace chmv4 {
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ListBox ListBox1;
+        
+        /// <summary>
+        /// UpdateProgress1 элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.UpdateProgress UpdateProgress1;
         
         /// <summary>
         /// Product элемент управления.

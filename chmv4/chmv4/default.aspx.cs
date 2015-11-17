@@ -10,7 +10,7 @@ namespace chmv4
 {
     public partial class _default : System.Web.UI.Page
     {
-        SqlConnection cn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\2Dent_000\Documents\GitHub\Chmv_4\test\chmv4\chmv4\App_Data\forexample.mdf;Integrated Security=True");
+        SqlConnection cn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\2Dent_000\Documents\GitHub\Chmv-6\chmv4\chmv4\App_Data\forexample.mdf;Integrated Security=True");
         SqlCommand cmd = new SqlCommand();
         SqlDataReader dr;
         public static string rights = "User";
@@ -255,6 +255,11 @@ namespace chmv4
         protected void ListBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        protected void GridView1_PageIndexChanged(object sender, EventArgs e)
+        {
+            System.Threading.Thread.Sleep(3000);
         }
 
 
