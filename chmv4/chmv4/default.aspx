@@ -293,7 +293,7 @@
                                     <td class="auto-style32">
                                         <asp:TextBox ID="txtFrom" runat="server" Width="60px"></asp:TextBox>
                                     </td>
-                                    <td class="auto-style33"><strong>до</strong></td>
+                                    <td class="auto-style33"><p align="right" class="auto-style1"><strong>до</strong></p></td>
                                     <td class="auto-style34">
                                         <asp:TextBox ID="txtTo" runat="server" Width="60px"></asp:TextBox>
                                     </td>

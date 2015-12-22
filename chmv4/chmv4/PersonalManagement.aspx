@@ -25,7 +25,8 @@
     <form id="form1" runat="server">
         <div>
 
-            <asp:Button ID="btnToMain" runat="server" Text="На главную" OnClick="btnToMain_Click" />
+            <br />
+            \<asp:Button ID="btnToMain" runat="server" Text="На главную" OnClick="btnToMain_Click" />
 
             <br />
             <asp:ScriptManager ID="ScriptManager1" runat="server">
